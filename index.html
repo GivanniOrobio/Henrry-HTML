@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 <html lang="es">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Mi Primer Sitio Web</title>
-   </head>
-   <body>
 
-     <header>
-     	<h1>Home work HTML</h1>
-     	<span><a href="./index.html">INICIO</a></span>
-     	<span><a href="./productos.html">PRODUCTOS</a></span>
-     	<span><a href="./servicios.html">SERVICIOS</a></span>
-     	<span><a href="./contacto.html">CONTACTO</a></span>     	
-     </header>
-	 <hr>
-     <main>
-     	<img src="./imagenes/Barber-Shop-Tools.jpg">
-     	<section>     		
-     		<h2>Productos</h2>
-     		<article>   
-     			<div>
-     				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-     			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-     			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-     			<a href="leer.html">leer más</a>
-     			</div> 
-     		</article>
-			<hr>
-			<h2>Servicios</h2>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mi Primer Sitio Web</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+	<header>
+		<div class="top">
+			<h1>Home work HTML</h1>
+		</div>
+		
+		<div class="nav-bar">
+			<span class="sp-link"><a href="./index.html">INICIO</a></span>
+			<span class="sp-link"><a href="./productos.html">PRODUCTOS</a></span>
+			<span class="sp-link"><a href="./servicios.html">SERVICIOS</a></span>
+			<span class="sp-link"><a href="./contacto.html">CONTACTO</a></span>
+		</div>
+	</header>
+	
+	<main>
+		<img id="img-top" src="./imagenes/Barber-Shop-Tools.jpg">
+		<section>
+			<h2><a href="productos.html">Productos</a></h2>
+			<article>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+					<a class="leer-mas " href="leer.html">leer más</a>
+				</div>
+			</article>
+
+			
+
+			<h2><a href="servicios.html">Servicios</a></h2>
 			<article>
 				<ol>
-					<li><a href="leer.html">corte</a></li>
-					<li><a href="leer.html">peinado</a></li>
-					<li><a href="leer.html">uñas</a></li>
+					<li><a class="s-link" href="leer.html">corte</a></li>
+					<li><a class="s-link" href="leer.html">peinado</a></li>
+					<li><a class="s-link" href="leer.html">uñas</a></li>
 				</ol>
-				<hr>
 			</article>
-			<H2>Contactanos</H2>
-			<article>
-				<a href="#">mail@mail.co</a><br>
-				<span>tel: 57 123-123456</span><br>
-				<span><a href="#">ubicación</a></span>
+			<hr class="separador">
+			<H2 class="cnt"><a href="contacto.html">Contactanos</a></H2>
+			<article class="info-footer">
+				<a class="mail" href="#">mail@mail.co</a>
+				<span class="tel">tel: 57 123-123456</span>
+				<span class="geo"><a href="#">calle 45 #27-65</a></span>
 			</article>
-     	</section>
-     </main>
-	 <hr>
-	 <footer>
-        <div>&copy 2024 mail@mail.co</div>
-        <span>facebook</span><br>
-       <span>twitter</span><br>
-       <span>instagram</span>
-    </footer>
-   </body>
+			<hr class="separador">
+		</section>
+	</main>
+	
+	<footer>
+		<div class="copy">&copy 2024 mail@mail.co</div>
+		<div class=" redes">
+			<span class="sp-redes">facebook</span>
+			<span class="sp-redes">twitter</span>
+			<span class="sp-redes">instagram</span>
+		</div>
+
+	</footer>
+</body>
+
 </html>

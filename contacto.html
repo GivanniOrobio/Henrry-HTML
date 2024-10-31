@@ -1,34 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
-</head>
-<body>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contacto</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+<body id="cnt">
     <header>
-        <h1>CONTACTO</h1>
-        <span><a href="./index.html">INICIO</a></span>
-        <span><a href="./productos.html">PRODUCTOS</a></span>
-        <span><a href="./servicios.html">SERVICIOS</a></span>
-        <span><a href="./contacto.html">CONTACTO</a></span>     	
-    </header>
+        <div class="top">
+            <h1>CONTACTANOS</h1>
+        </div>
+		
+		<div class="nav-bar">
+			<span class="sp-link"><a href="./index.html">INICIO</a></span>
+			<span class="sp-link"><a href="./productos.html">PRODUCTOS</a></span>
+			<span class="sp-link"><a href="./servicios.html">SERVICIOS</a></span>
+			<span class="sp-link"><a href="./contacto.html">CONTACTO</a></span>
+		</div>
+	</header>
     <main>
-        <form method="post">
+        <form id="contacto" method="post">
             <h2>Contacto</h2>
             <input type="text"  id="nombre" name="nombre" placeholder="Nombre"  required><br><br>
             <input type="email" id="email" name="email" placeholder="Correo electrónico" required><br><br>
             <label for="contenido">Su Mensaje</label><br>
-            <textarea name="contenido" id="contenido" placeholder="su comententario aquí"></textarea><br>
-            <input type="submit" value="Enviar">
+            <textarea name="contenido" id="contenido" placeholder="su comentario aquí"></textarea><br>
+            <input class="enviar" type="submit" value="Enviar">
         </form>
     </main>
-    <hr>
+
     <footer>
-        <div>&copy 2024 mail@mail.co</div>
-        <span>facebook</span><br>
-       <span>twitter</span><br>
-       <span>instagram</span>
-    </footer>
+		<div class="copy">&copy 2024 mail@mail.co</div>
+		<div class=" redes">
+			<span class="sp-redes">facebook</span>
+			<span class="sp-redes">twitter</span>
+			<span class="sp-redes">instagram</span>
+		</div>
+
+	</footer>
 </body>
 </html>

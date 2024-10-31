@@ -2,46 +2,66 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Mi Primer Sitio Web</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>PRODUCTOS</h1>
-        <span><a href="./index.html">INICIO</a></span>
+        <div class="top">
+            <h1>PRODUCTOS</h1>
+        </div>
+        <div class="nav-bar">
+          <span><a href="./index.html">INICIO</a></span>
         <span><a href="./productos.html">PRODUCTOS</a></span>
         <span><a href="./servicios.html">SERVICIOS</a></span>
-        <span><a href="./contacto.html">CONTACTO</a></span>
+        <span><a href="./contacto.html">CONTACTO</a></span>   
+        </div>       
     </header>
     <hr>
     <main>
-        <section>
-            <h2>Tinta para el cabello</h2>
-            <article>
-                <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laborum animi. Doloremque?</p>
-                <img src="./imagenes/tinta.jpg" alt="tinta">
+        <section class="car-productos">
+            <div class=" card producto">
+                <div class=" card-header">
+                    <h2>Tinta para el cabello</h2>
+                </div>
+                <div class="card-body">                    
+                    <img src="./imagenes/tinta.jpg" alt="tinta">
+                    <h5 class="card-title">Ref:TC-25</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
+                <div class="card-footer ">
+                    <a href="leer.html" class="leer-mas">Ver producto</a>
+                </div>
             </div>
-            </article>
-            <hr>
-            <h2>Crema hidratante</h2>
-            <article>
-                <div>
-                    <p>Lorem ipsum dolor sit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, laborum animi. Doloremque?</p>
-                <img src="./imagenes/crema.jpg" alt="crema">
-            </div>
-            </article>         
+            
+
+            <div class=" card producto">
+                <div class=" card-header">
+                    <h2>Crema hidratante</h2>
+                </div>
+                <div class="card-body">                    
+                    <img src="./imagenes/crema.jpg" alt="crema">
+                    <h5 class="card-title">Ref:TC-28</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consecte.</p>
+                </div>
+                <div class="card-footer ">
+                    <a href="leer.html" class="leer-mas">Ver producto</a>
+                </div>
+            </div>      
             
         </section>
-        <hr>
+
         <footer>
-            <div>&copy 2024 mail@mail.co</div>
-            <span>facebook</span><br>
-           <span>twitter</span><br>
-           <span>instagram</span>
+            <div class="copy">&copy 2024 mail@mail.co</div>
+            <div class=" redes">
+                <span class="sp-redes">facebook</span>
+                <span class="sp-redes">twitter</span>
+                <span class="sp-redes">instagram</span>
+            </div>
+    
         </footer>
 
     </main>
